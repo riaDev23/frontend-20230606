@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Practice</title>
+  <style>
+    #title-imgbox {
+      max-width: 60vw;
+      height: 250px;
+      /* 상대경로 사용 배경이미지 지정 */
+      background-image: url("images/section2-img.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <h1>Welcome to My Website</h1>
+    <nav>
+      <span class="section-btn">
+        <a href="#section1" class="section-link">Section 1</a>
+      </span>
+      <span class="section-btn">
+        <a href="#section2" class="section-link">Section 2</a>
+      </span>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="section1">
+      <h2 class="section-title">Section 1</h2>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+        </tbody>
+      </table>
+      <article>
+        <!-- 절대 경로 사용 이미지 지정 -->
+        <img src="\images\section1-img.jpg" alt="화려한 여자 얼굴 이미지" width="150px" height="150px">
+      </article>
+    </section>
+
+    <section id="section2">
+      <h2 class="section-title">Section 2</h2>
+      <!-- div에 id 설정 후 내부 스타일 시트로 배경이미지 삽입 -->
+      <div id="title-imgbox"></div>
+      <form action="#" id="info-form">
+        <fieldset>
+          <legend><strong>Personal Information</strong></legend>
+          <label for="#name">Name:</label>
+          <input type="text" id="name">
+          <label for="#password">Password:</label>
+          <input type="text" id="password">
+          <label for="#email">Email:</label>
+          <input type="text" id="email">
+          <span><b>Do you like this form?</b></span>
+          <input type="radio" id="like_yes" name="likethis">
+          <label for="like_yes">Yes</label>
+          <input type="radio" id="like_no" name="likethis">
+          <label for="like_no">No</label>
+          <label for="comments"><em>Comments:</em></label>
+          <textarea name="comments" id="comments" rows="5"></textarea>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer id="footer">
+
+  </footer>
+</body>
+
+</html>

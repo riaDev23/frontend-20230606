@@ -1,0 +1,76 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.section-title {
+  font-style: italic;
+  font-size: large;
+}
+
+.section-btn a {
+  text-decoration: none;
+}
+
+.section-btn a:hover {
+  color: red;
+}
+
+#header {
+  width: 60vw;
+}
+
+#header h1 {
+  text-align: center;
+  color: blue;
+  font-size: large;
+}
+
+#header nav {
+  background-color: #BFDEB7;
+  font-size: x-large;
+}
+
+#header .section-btn {
+  margin-right: .5rem;
+}
+
+#main {
+  width: 60vw;
+}
+
+#section1 #data-table {
+  text-align: left;
+  width: 100%;
+}
+
+#section1 #data-table th,
+#section1 #data-table td {
+  border-bottom: 1px solid gainsboro;
+}
+
+#section2 input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#section2 fieldset {
+  background-color: rgba(0, 0, 0, .05);
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  width: 60vw;
+  box-sizing: border-box;
+}
+
+#section2 label[for^="like"] {
+  text-align: center;
+}
